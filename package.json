@@ -1,0 +1,16 @@
+{
+  "name": "wreck-stats",
+  "version": "0.0.1",
+  "description": "a wreck ",
+  "main": "lib/index",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "author": "Sam Selvanathan",
+  "dependencies": {
+    "wreck": "^5.0.1"
+  },
+  "devDependencies": {
+    "lab": "^5.1.0"
+  }
+}
