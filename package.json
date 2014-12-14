@@ -8,6 +8,7 @@
   },
   "author": "Sam Selvanathan",
   "dependencies": {
+    "hoek": "^2.10.0",
     "wreck": "^5.0.1"
   },
   "devDependencies": {
