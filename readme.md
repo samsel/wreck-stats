@@ -9,3 +9,4 @@ stats plugin for wreck
 * wreck-stats should write an object to that as an object with url, method, time, etc.
 * each wreck-stats accessor should be able to pass an id (assigned by default if not) and we should write that id to the logger
 * test with a local host server (that hangs request for a known time) and see if it matches the actual wreck-stats time
+* add linter to codebase
