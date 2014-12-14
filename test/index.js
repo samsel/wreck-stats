@@ -1,4 +1,4 @@
-var Wreck = require('../lib/index');
+var Wreck = require('../index');
 
 var method = 'GET'; // GET, POST, PUT, DELETE
 //var uri = 'https://locahost:8081/';
@@ -15,6 +15,6 @@ var uri =  'https://www.yahoo.com/';
 //});
 
 Wreck.get(uri, function (err, res, payload) {
-    console.log(payload.toString());
+    console.log(payload.toString().length);
 });
 

@@ -7,18 +7,18 @@ function shortcutWrap(method, uri /* [options], callback */) {
 	var callback = (typeof arguments[2] === 'function' ? arguments[2] : arguments[3]);
 
 	return shortcut(method, uri, options, callback);
-};
+}
 
 
 function shortcut(method, uri, options, callback) {
 
-	return Wreck_Stats.request(method, uri, options, function (err, res) {
+	return _Wreck.request(method, uri, options, function (err, res) {
 
 		if (err) {
 			return callback(err);
 		}
 
-		Wreck_Stats.read(res, options, function (err, payload) {
+		_Wreck.read(res, options, function (err, payload) {
 
 			if (payload instanceof Buffer) {
 				payload = payload.toString();
@@ -27,7 +27,7 @@ function shortcut(method, uri, options, callback) {
 			return callback(err, res, payload);
 		});
 	});
-};
+}
 
 function ObjectPropertyWrap(val) {
 	return {
@@ -83,4 +83,4 @@ var properties = {
 	})
 };
 
-var Wreck_Stats = module.exports = Object.create(require('wreck'), properties);
+var _Wreck = module.exports = Object.create(require('wreck'), properties);

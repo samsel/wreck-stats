@@ -2,16 +2,24 @@
   "name": "wreck-stats",
   "version": "0.0.1",
   "description": "a wreck ",
-  "main": "lib/index",
+  "main": "index.js",
   "scripts": {
-    "test": "node test/index.js"
+    "test": "npm run lint && node test/index.js",
+    "lint": "jshint --config=.jshintrc --exclude='node_modules' *.js"
   },
   "author": "Sam Selvanathan",
   "dependencies": {
-    "hoek": "^2.10.0",
     "wreck": "^5.0.1"
   },
   "devDependencies": {
+    "jshint": "^2.5.10",
     "lab": "^5.1.0"
-  }
+  },
+  "keywords": [
+    "wreck",
+    "stats",
+    "http",
+    "timing"
+  ]
 }
+
