@@ -2,7 +2,7 @@
   "name": "wreck-stats",
   "version": "0.0.1",
   "description": "a wreck ",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint && node test/index.js",
     "lint": "jshint --config=.jshintrc --exclude='node_modules' *.js"
