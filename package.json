@@ -9,9 +9,11 @@
   },
   "author": "Sam Selvanathan",
   "dependencies": {
+    "node-uuid": "^1.4.2",
     "wreck": "^5.0.1"
   },
   "devDependencies": {
+    "code": "^1.2.1",
     "jshint": "^2.5.10",
     "lab": "^5.1.0"
   },
@@ -22,4 +24,3 @@
     "timing"
   ]
 }
-
