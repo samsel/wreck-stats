@@ -9,11 +9,12 @@
 var rewire = require('rewire');
 var WreckTests = rewire('../node_modules/wreck/test/index');
 
-// modify the Wteck variable inside the Wreck's
-// test file with our version of Wreck
+// modify the `Wreck` private variable inside the Wreck's
+// test file with our version of Wreck and our expect library!
 var WreckStats = require('../lib/index');
-// set a silent logger
-WreckStats.setLogger(function(){});
 WreckTests.__set__('Wreck', WreckStats);
+WreckTests.__set__('expect', require('code').expect);
+// finally, set a silent logger :)
+WreckStats.setLogger(function(){});
 
 exports.lab = WreckTests.lab;
