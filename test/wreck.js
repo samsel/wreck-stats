@@ -6,8 +6,8 @@
   replacement for Wreck along
   with some stats logging feature!
 */
-var rewire = require('rewire');
-var WreckTests = rewire('../node_modules/wreck/test/index');
+var Rewire = require('rewire');
+var WreckTests = Rewire('../node_modules/wreck/test/index');
 
 // modify the `Wreck` private variable inside the Wreck's
 // test file with our version of Wreck and our expect library!
