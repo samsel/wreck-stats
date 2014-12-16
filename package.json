@@ -4,8 +4,8 @@
   "description": "a wreck ",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run lint && node test/index.js",
-    "lint": "jshint --config=.jshintrc --exclude='node_modules' *.js"
+    "test": "npm run lint && make test-cov",
+    "lint": "jshint --config=.jshintrc --exclude='node_modules' lib/*.js"
   },
   "author": "Sam Selvanathan",
   "dependencies": {
@@ -13,9 +13,9 @@
     "wreck": "^5.0.1"
   },
   "devDependencies": {
-    "code": "^1.2.1",
     "jshint": "^2.5.10",
-    "lab": "^5.1.0"
+    "lab": "^5.1.0",
+    "rewire": "^2.1.3"
   },
   "keywords": [
     "wreck",
