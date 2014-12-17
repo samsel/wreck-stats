@@ -1,7 +1,7 @@
 {
   "name": "wreck-stats",
   "description": "wreck-stats is wreck with a stats logging feature",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Sam Selvanathan <sjasel@gmail.com>",
   "license": "MIT",
   "keywords": [

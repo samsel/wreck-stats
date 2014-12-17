@@ -35,11 +35,5 @@ It has the below properties.
 - `id` - A unique identifier string for each request.
 - `method` - The HTTP methods of the request.
 - `uri` - The URI of the request.
+- `statusCode` - The HTTP response status code.
 - `duration` - The duration taken to process the request (in milliseconds).
-
-
-
-## ToDo
-* each wreck-stats accessor should be able to pass an id (assigned by default if not)
-  and we should write that id to the logger
-* will this work for redirects?

@@ -54,6 +54,7 @@ describe('WreckStats', function () {
                 expect(obj.id).to.be.a.string();
                 expect(obj.method.toLowerCase()).to.equal('get');
                 expect(obj.uri).to.equal('http://localhost:' + server.address().port);
+                expect(obj.statusCode).to.not.equal(-1);
                 var duration = parseFloat(obj.duration);
                 expect(duration).to.be.at.least(SIMULATED_LATENCY);
                 //safe delay assumption
@@ -89,6 +90,7 @@ describe('WreckStats', function () {
                 expect(obj.id).to.be.a.string();
                 expect(obj.method.toLowerCase()).to.equal('put');
                 expect(obj.uri).to.equal('http://localhost:8000000');
+                expect(obj.statusCode).to.equal(-1);
                 var duration = parseFloat(obj.duration);
                 ////safe delay assumption
                 expect(duration).to.be.below(100);
