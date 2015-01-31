@@ -1,7 +1,7 @@
 {
   "name": "wreck-stats",
   "description": "wreck-stats is wreck with a stats logging feature",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "author": "Sam Selvanathan <sjasel@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "node-uuid": "^1.4.2",
-    "wreck": "^5.0.1"
+    "wreck": "^5.1.0"
   },
   "devDependencies": {
     "code": "^1.2.1",
@@ -29,7 +29,9 @@
     "rewire": "^2.1.3"
   },
   "jscsConfig": {
-    "excludeFiles": ["node_modules/**"],
+    "excludeFiles": [
+      "node_modules/**"
+    ],
     "preset": "airbnb"
   }
 }
